@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+
+        body {
+            background-image: url('imagens/wallpaper001.jpg');
+        }
+
+        .quadrado {
+            display: inline-block; /* Faz com que os quadrados fiquem horizontais */
+            border: 2px solid black;
+            border-radius: 10px;
+
+            /* Molde dos quadrados */
+            width: 300px;
+            height: 300px;
+        }
+
+        #um {
+            background-image: url('imagens/pattern003.png')
+        }
+
+        #dois {
+            background-image: url('imagens/wallpaper005.jpg');
+        }
+
+        #tres {
+            background-image: url('imagens/pattern001.png');
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado"  id="um"></div>
+    <div class="quadrado" id="dois"></div>
+    <div class="quadrado" id="tres"></div>
+</body>
+</html>
