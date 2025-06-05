@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture> <!-- Ela permite que você crie os source's-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!-- Tem que vir antes do srcset que tem foto-m -->
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png"> <!-- Como se fosse uma "condição de existência" entre os tamanhos das imagens-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir um áudio em HTML5</p>
+    <audio src="media/paiva.mp3" controls autoplay></audio> <!-- controls serve para aparecer o botão de fato / autoplay serve para o áudio começar instantâneo (alguns navegadores não têm compatibilidade) -->
+
+    <audio preload="metadata" controls loop> <!-- auto só irá entender que o site terminou de carregar quando você carregar todo o áudio (e geralmente são pesados) / metadata apenas irá carregar algumas informações do arquivo / none não irá carregar nada / loop voltará o áudio quando acabar-->
+        <source src="media/paiva.mp3" type="audio/mpeg">
+        <source src="media/paiva.ogg" type="audio/ogg">
+        <source src="media/paiva.wav" type="audio/wav"> <!-- EVITE, SÃO PESADOS!! -->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="media/paiva.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

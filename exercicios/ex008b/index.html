@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-Fonte / Pré-Formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript</p> <!-- Fonte monoespaçada -->
+    <pre> <!-- Tag "pre" para o código ficar EXATAMENTE assim na página-->
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+
+    <h2>Citações</h2>
+    <p>Como diria um pai de um amigo: <q>o computador é um burro muito rápido</q></p> <!-- Tag "q" coloca aspas para dar sentido a uma citação -->
+
+    <h2>Citações Completas</h2>
+    <p>Segundo Jeff Nobel, no seu livro HTML para leigos:</p>
+    <blockquote cite="https://www.amazon.com.br/Html-Xhtml-css-Para-Leigos/dp/8576086972/ref=sr_1_1?adgrpid=129505957336&dib=eyJ2IjoiMSJ9.mOtGCB8VBNNOePC1YkowxAMVZRc3jzdCddw1xTNIsNwK2frZxf_DtiHWjVvPmkXBBPHO9Sl96VGWqARTUHNX0TvQfxNTkWqckX7i22tS9VaPpeA9nm03eLYGslflLK5RVBuRoXr9_-ebheIVuZeZ0bv6s4JaYF9KZDBYAlOTObx1nj6lIyoZJ8dycmlSTUStiVpg_Q9G7ysCB9OavH0YjgFiD1FICLabVBrsgFJE3fM.Ra5iV_kJ8gCeNTc2Na9aUIuP1sRVLi8Ql6Ts2ZjTC0E&dib_tag=se&hvadid=595815709129&hvdev=c&hvlocphy=9100227&hvnetw=g&hvqmt=e&hvrand=2063165472982518653&hvtargid=kwd-631960683830&hydadcr=5760_13215245&keywords=html+para+leigos&mcid=0f1385d512b139f480b6eb01dfd84950&qid=1748306328&s=books&sr=1-1"> <!-- blockuote: Desloca horizontalmente / cite: Deixa o endereço desejado como forma de citação -->
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML nesse capítulo descrevem os blocos de texto
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando</p> <!-- Após passar o mouse em cima, aparece a abreviação -->
+
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p> <!-- Inverte da direita para a esquerda-->
+</body>
+</html>

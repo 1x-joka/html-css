@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: dimgray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px; /* Faz "descolar" o footer do main */
+        }
+
+        header {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: rgba(102, 102, 102);
+            padding: 3px;
+            box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.541); /* Deslocamento horizontal, deslocamento vertical, espalhamento e cor da sombra */
+        }
+
+        nav > a {
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            text-decoration: none;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 30px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(165, 165, 165);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        
+        footer > p { /* Fazemos isso pois, no DevTools, ele já coloca automaticamente uma margem de 16px, então distorce o padding do footer normal */
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%; /* Transformando em um círculo */
+        }
+    </style>
+</head>
+<body>
+    <header> <!-- Cabeçalho -->
+        <h1>Meu site </h1>
+        <nav> <!-- Menu -->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!-- Conteúdo Principal -->
+        <section id="assuntos"> <!-- Sessão -->
+            <p>Esportes, Política e Tecnologia</p>
+        </section>
+        <section id="noticias"> 
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos natus reiciendis quam minus obcaecati quod temporibus architecto incidunt soluta, iste quae, saepe vero, cupiditate et molestiae maxime modi. Officiis, modi?</p>
+                <aside> <!-- Conteúdo periférico relativo ao artigo -->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer> <!-- Rodapé -->
+        <p>Desenvolvido pelo Joka</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

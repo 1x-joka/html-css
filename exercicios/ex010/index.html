@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1> <!-- Links externos irão te levar para outra página -->
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external"> repositório público no Github</a></p> <!-- href pede para você falar para onde seu site vai / target="_blank" faz abrir outra aba no navegador, e não substituir a atual / rel="external" apenas diz que o link é externo, mas não é obrigatório -->
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/">canal gratuito no Youtube</a></p>
+
+    <h1>Usando links internos</h1> <!-- Links internos farão uma relação com outra página dentro da nossa página -->
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página</a></p> <!-- rel="next" para dizer que esse link irá te direcionar para a próxima página (não necessariamente a segunda)-->
+    <p>Você também pode acessar nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a> </p> <!-- target="_self" para abrir na própria aba -->
+
+    <h1>Links para Download</h1>
+    <ul>
+        <li><a href="livro/LISTA APMBB 1 FÍSICA.pdf" download="LISTA APMBB 1 FÍSICA.pdf" type="application/pdf">Baixar o livro em PDF</a></li> <!-- download e type = parâmetros em um site chamado iana.org-->
+        <li><a href="livro/livro.zip" download="LISTA APMBB 1 FÍSICA.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>
