@@ -59,6 +59,19 @@ section {
     font-size: 3.5vw;
 }
 
+section > p {
+    padding-bottom: 2em; 
+}
+
+#img1 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+#img2 {
+    background-image: url('../imagens/background002.jpg')
+}
+
 .normal {
     background-color: white;
     color: black;
@@ -67,12 +80,16 @@ section {
 .imagem {
     background-color: rgb(39, 37, 37);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.432); /* inset para ser sombra para dentro */
+    background-size: cover;
+    background-attachment: fixed; /* Efeito Parallax */
 }
 
 .imagem > p {
-    background-color: rgba(0, 0, 0, 0.13);
+    background-color: rgba(0, 0, 0, 0.498);
     display: inline-block;
     padding: 5px;
+    text-shadow: 1px 1px 0px black;
 }
 
 footer {
