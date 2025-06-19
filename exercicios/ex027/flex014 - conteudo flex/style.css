@@ -12,9 +12,15 @@ body {
     line-height: 1.5em; /* Espaçamento entre as linhas */
 }
 
-p, h1, h2 {
+p {
     margin-bottom: 10px;
     text-align: justify;
+}
+
+h1, h2 {
+    margin-bottom: 20px; /* Espaçamento entre o título e o parágrafo */
+    text-align: left;
+    line-height: 1.2em;
 }
 
 header, section.normal {
@@ -44,21 +50,21 @@ article.media-text { /* Configurando a quebra da galinha */
 
 article > div.text {
     flex: 1 1 500px;
-    border: 2px dashed blue;
 }
 
 .media {
-    border: 2px dashed red;
     flex: 1 0 500px;
 }
 
 .media > img {
     display: block;
     margin: auto; /* Centralizando */
+    width: 300px; /* Diminuindo a imagem */
+    padding: 10px; /* Separando o espaço entre as imagem */
 }
 
 .media > iframe {
     display: block;
-    margin: auto;
-    padding: 0px 20px;
+    margin: auto; /* Centralizando para não ficar colado ao texto */
+    width: 90%; /* Aumentando o espaço ocupado da imagem no site ao reduzir a página */
 }
