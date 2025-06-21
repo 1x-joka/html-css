@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.caixa1 {
+    background-color: red;
+
+    /* Definindo o espaço vertical que a Caixa 1 irá ocupar */
+    grid-row-start: 1;
+    grid-row-end: -4;
+
+    /* Definindo o espaço horizontal que a Caixa 1 irá ocupar */
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.caixa2 {
+    background-color: green;
+
+    grid-row-start: 2;
+    grid-row-end: -1;
+
+    grid-column-start: 1;
+    grid-column-end: -3;
+}
+
+.caixa3 {
+    background-color: blue;
+
+    grid-row-start: 2;
+    grid-row-end: -1;
+
+    grid-column-start: 3;
+    grid-column-end: -1;
+}
