@@ -11,16 +11,12 @@
 
             /* Transformando em grade (Grid Layout) */
             display: grid;
-            grid-template-columns: auto auto auto; /* Organiza em 3 colunas */
-            grid-template-rows: auto auto auto; /* Organiza em 3 linhas */
-            gap: 5px; /* Cria o espaçamento entre os itens */
+            grid-template: repeat(3, auto) / repeat(3, auto); /* Shorthand */
+            gap: 10px; /* Cria o espaçamento entre os itens */
 
             /* Propriedades de Container para Grids */
-            align-items: center; /* Cola no meio verticalmente */
-            justify-items: center; /* Cola no meio horizontalmente */
-            align-content: start; /* Cola todo mundo (todo o conteúdo) em cima */
-            justify-content: center; /* Cola todo mundo (todo o conteúdo) no meio */
-
+            place-items: start center; /* Shorthand de align-items e justify-items */
+            place-content: space-between end; /* Shorthand de align-content e justify-content */
         }
 
         .item {
