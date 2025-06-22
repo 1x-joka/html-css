@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Iframe</title>
+    <style>
+        iframe { /* Essa configuração que irá ser atribuída, CSS são soberanas */
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um Iframe</h1>
+    <p>Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="1" height="500px" scrolling="no"></iframe> para aprender a programar</p> <!-- Carregando uma janela dentro do site / scrolling="no" não cria a barra de rolagem (depende do navegador) / frameborder é 0 ou 1 -->
+
+    <p>O site do <iframe src="https://www.google.com.br" frameborder="0" height="500px" width="500px"><a href="https://www.google.com.br" target="_blank">Site do Google</a></iframe> também é muito legal</p> <!-- Site com proteção a iframes / Caso o site não seja carregado irá aparecer o link -->
+</body>
+</html>
