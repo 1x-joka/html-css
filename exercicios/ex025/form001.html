@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form autocomplete="off" action="cadastro.php"> <!-- autocomplete: Desligando a "sugestão de dados" / action: ação que será disparada quando o usuário clicar no botão submit -->
+        <p><label for="nome">Nome:</label> <!-- label: "linkando/conectando" o parágrafo ao input. Dizendo que o input na frente do parágrafo se refere ao nome / Dentro do for tem que ter o ID -->
+            <input type="text" name="nome" id="inome"></p>
+
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p> <!-- submit = submeter = enviar -->
+    </form>
+</body>
+</html>
