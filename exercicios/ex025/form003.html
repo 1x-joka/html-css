@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro.php" method="GET" autocomplete="on">
+    <form action="cadastro.php" method="POST" autocomplete="on"> <!-- Usando POST por conta do arquivo -->
         <p> <label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
         </p>
@@ -26,10 +26,6 @@
         <p>
             <label for="ihora">Hora da Aplicação</label>
             <input type="time" name="hora" id="ihora">
-        </p>
-        <p>
-            <label for="iarq">Arquivo do Boletim:</label>
-            <input type="file" name="arq" id="iarq">
         </p>
         <p>
             <input type="submit" value="Enviar">
